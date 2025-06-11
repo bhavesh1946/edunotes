@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduNotes Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #cbd5ff, #ffe0f0);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #4c51bf;
+      gap: 10px;
+      text-shadow: 1px 1px 2px #b4b4ff;
+    }
+
+    .logo span {
+      font-size: 1.7rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4c4c4c;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4c51bf;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #4c51bf;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .start-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      background-color: #4c51bf;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .start-btn:hover {
+      background-color: #5a5fd1;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>📘</span> EduNotes
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="member.html">Members</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- What is EduNotes -->
+  <section class="section">
+    <h2>What is EduNotes?</h2>
+    <p>
+      EduNotes is a modern, student-friendly platform built to help learners organize, access, and share academic notes with ease. Whether you're preparing for exams or revising lecture material, EduNotes is your digital companion for success.
+    </p>
+    <a class="start-btn" href="start.html">Start with EduNotes</a>
+  </section>
+
+  <!-- Purpose -->
+  <section class="section">
+    <h2>Why was EduNotes Created?</h2>
+    <p>
+      EduNotes was created to solve the everyday challenges faced by students: scattered notes, forgotten materials, and missed topics. With EduNotes, everything is centralized and collaborative, making learning smoother and more enjoyable for everyone.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <h2>Contact Us</h2>
+    <p>
+      Have a question or want to join the EduNotes team? Reach out to us at:<br><br>
+      <strong>Email:</strong> edunotes85@gmai.com<br>
+          </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EduNotes. All rights reserved.
+  </footer>
+
+</body>
+</html>
