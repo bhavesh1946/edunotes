@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Notes | EduNotes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e0eaff, #ffeaf5);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #4c51bf;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    nav a:hover {
+      color: #4c51bf;
+    }
+
+    .main-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #4c51bf;
+      margin-bottom: 30px;
+    }
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .subject-card {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .subject-card:hover {
+      transform: scale(1.03);
+    }
+
+    .subject-card a {
+      text-decoration: none;
+      color: #3742a5;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: block;
+    }
+
+    .subject-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.05);
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📘 EduNotes</div>
+     </header>
+
+  <section class="main-section">
+    <h1>📚 notes</h1>
+    <div class="subjects">
+      <div class="subject-card">
+        <a href="architecture.html" >Computer Architecture</a>
+      </div>
+      <div class="subject-card">
+        <a href="java.html">Object Oriented Java Programming</a>
+      </div>
+      <div class="subject-card">
+        <a href="physics.html">Engineering Physics</a>
+      </div>
+      <div class="subject-card">
+        <a href="https://drive.google.com/drive/folders/example4" target="_blank">Advanced Python</a>
+      </div>
+      <div class="subject-card">
+        <a href="data.html">Data Structures & Algorithms</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 EduNotes — All rights reserved.
+  </footer>
+
+</body>
+</html>
