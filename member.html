@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Members | EduNotes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #cbd5ff, #ffe0f0);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #4c51bf;
+      gap: 10px;
+      text-shadow: 1px 1px 2px #b4b4ff;
+    }
+
+    .logo span {
+      font-size: 1.7rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4c4c4c;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4c51bf;
+    }
+
+    .team-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2.2rem;
+      color: #4c51bf;
+      margin-bottom: 40px;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member-card {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .member-card:hover {
+      transform: scale(1.03);
+    }
+
+    .member-card img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .member-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .member-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+      }
+
+      .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span>📘</span> EduNotes
+    </div>
+    <nav>
+         </nav>
+  </header>
+
+  <section class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <div class="member-card">
+        <img src="team/nikunj.jpg" alt="Nikunj Wakode">
+        <h3>Nikunj Wakode</h3>
+        <p>Project Coordinator<br/>Idea & Execution Guide</p>
+      </div>
+      <div class="member-card">
+        <img src="team/jahanvi.jpg" alt="Jahanvi Lodwal">
+        <h3>Jahanvi Lodwal</h3>
+        <p>Designing Head</p>
+      </div>
+      <div class="member-card">
+        <img src="team/harshita.jpg" alt="Harshita Patel">
+        <h3>Harshita Patel</h3>
+        <p>Content & Innovation Strategist</p>
+      </div>
+      <div class="member-card">
+        <img src="team/bhavesh.jpg" alt="Bhavesh Mourya">
+        <h3>Bhavesh Mourya</h3>
+        <p>Technical Head</p>
+      </div>
+      <div class="member-card">
+        <img src="team/mashira.jpg" alt="Mashira Khan">
+        <h3>Mashira Khan</h3>
+        <p>Creative Head</p>
+      </div>
+      <div class="member-card">
+        <img src="team/ankit.jpg" alt="Ankit Dhakad">
+        <h3>Ankit Dhakad</h3>
+        <p>Quality Assurance Lead</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 EduNotes. All rights reserved.
+  </footer>
+
+</body>
+</html>
