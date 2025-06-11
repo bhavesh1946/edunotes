@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer Architecture | EduNotes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e0eaff, #ffeaf5);
+      color: #333;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #4c51bf;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    nav a:hover {
+      color: #4c51bf;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    main h1 {
+      font-size: 2.8rem;
+      color: #4c51bf;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    section.unit {
+      margin-bottom: 50px;
+    }
+
+    section.unit h2 {
+      font-size: 1.9rem;
+      color: #3a3f9a;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4c51bf;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      margin-top: 8px;
+    }
+
+    /* Google Drive link button styling */
+    .drive-link-container {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .drive-link {
+      display: inline-block;
+      background-color: #4c51bf;
+      color: white;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(76, 81, 191, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    .drive-link:hover {
+      background-color: #373ec9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.05);
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📘 EduNotes</div>
+    </header>
+
+  <main>
+    <h1>Computer Architecture</h1>
+
+    <section class="unit">
+      <h2>Unit-I: Basics of Computer Architecture</h2>
+      <ul>
+        <li>Designing combinational and sequential logic</li>
+        <li>Basic building blocks: logic gates, flip-flops, counters, registers, multiplexers, decoders</li>
+        <li>CPU organization and design: instruction sets, instruction cycles, memory reference instruction, I/O interruption, Adder and Subtractor</li>
+      </ul>
+      <div class="drive-link-container">
+        <a href="https://drive.google.com/drive/folders/YOUR_UNIT1_FOLDER_ID" target="_blank" rel="noopener" class="drive-link">
+          📂 Notes of this Unit
+        </a>
+      </div>
+    </section>
+
+    <section class="unit">
+      <h2>Unit-II: Design of Computer Architecture</h2>
+      <ul>
+        <li>Design of control unit: hardwired control, micro-program control, hazards and the method for caches, Cache characteristics, Basic superscalar architecture basics</li>
+      </ul>
+      <div class="drive-link-container">
+        <a href="https://drive.google.com/drive/folders/YOUR_UNIT2_FOLDER_ID" target="_blank" rel="noopener" class="drive-link">
+          📂 Notes of this Unit
+        </a>
+      </div>
+    </section>
+
+    <section class="unit">
+      <h2>Unit-III: Input/Output Organization and Memory Organization</h2>
+      <ul>
+        <li>Memory technologies: hierarchical memory systems, The locality principle and caching</li>
+        <li>Main memory: Semiconductor RAMs, ROMs, speed, power and debugging issues, Memory Interleaving, organization of a memory system</li>
+        <li>Advanced optimizations: performance improvement techniques, DRAM – organization and operation, Error correction techniques</li>
+        <li>Input/output subsystems: I/O device structure and behavior, Programmed I/O, Interrupt-driven I/O, Interrupts – architecture, design, and implementation</li>
+        <li>Direct Memory Access (DMA): DMA Controller, Input/output processors (TCMP), Network on Chips (NoC), NoC router – architecture, design, and implementation, Router organization and interface, Virtual input to NoC and storage – organization prefetching, QoS</li>
+      </ul>
+      <div class="drive-link-container">
+        <a href="https://drive.google.com/drive/folders/YOUR_UNIT3_FOLDER_ID" target="_blank" rel="noopener" class="drive-link">
+          📂 Notes of this Unit
+        </a>
+      </div>
+    </section>
+
+    <section class="unit">
+      <h2>Unit-IV: Computer Systems and Concurrency</h2>
+      <ul>
+        <li>Relation to parallel multiprocessors/multicomputer systems, Distributed and concurrent systems – architectural issues, An overview of parallel processing, Parallel processing architecture, Processor architecture, Flynn's taxonomy</li>
+        <li>Concurrency: Critical section problem, mutual exclusion, semaphores, monitors, Message passing, Synchronization, Deadlock</li>
+        <li>Asynchronous Executions: Design Issues and Challenges, Distributed Computing</li>
+        <li>Consistency and Concurrency: Consistency Models, Sequential Consistency, Relaxed Consistency, Distributed Consistency, Coherence, Coherence Protocols, Coordination and Agreements Algorithms, Global State and Distributed Transactions</li>
+      </ul>
+      <div class="drive-link-container">
+        <a href="https://drive.google.com/drive/folders/YOUR_UNIT4_FOLDER_ID" target="_blank" rel="noopener" class="drive-link">
+          📂 Notes of this Unit
+        </a>
+      </div>
+    </section>
+
+    <section class="unit">
+      <h2>Unit-V: High Performance Computing (HPC)</h2>
+      <ul>
+        <li>Why High Performance Computing, Parallel memory models, Data vs. Task parallelism, High throughput computing, Vectorization, Multithreading</li>
+        <li>Unit-V: High Performance Computing: CUDA</li>
+        <li>CUDA programming model, Basic principles of CUDA programming, Concepts of Thread block, Grid, Warp, and Streaming Multiprocessor</li>
+      </ul>
+      <div class="drive-link-container">
+        <a href="https://drive.google.com/drive/folders/YOUR_UNIT5_FOLDER_ID" target="_blank" rel="noopener" class="drive-link">
+          📂 Notes of this Unit
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 EduNotes — Thank you for supporting our knowledge-sharing mission!
+  </footer>
+
+</body>
+</html>
